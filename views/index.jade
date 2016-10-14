@@ -1,0 +1,13 @@
+extends layout
+
+block content
+ h1 File Metadata Microservice
+ h4 User stories:
+  p I can submit a FormData object that includes a file upload.
+  p When I submit something, I will receive the file size in bytes within the JSON response.
+ p Submit a file to view its filesize:
+ form(method="post",enctype="multipart/form-data",action="/upload",role="form")
+  p
+    input(type="file", name="upl")
+  p
+    input(type="submit")
